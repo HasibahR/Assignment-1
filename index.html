@@ -27,16 +27,20 @@
         margin: 8px;
         text-align:left;
         
-          background: rgb(81, 136, 127);
+          background: rgb(4, 48, 116);
           animation: mymove 10s infinite;
         }
         
         @keyframes mymove {
           from {background-color: rgb(4, 48, 116);}
-          to {background-color: rgb(241, 13, 63);}
-        
+          to {background-color: rgb(235, 191, 201);}        
         }
-    
+        @keyframes mymove {
+          from {background-color: rgb(134, 162, 223);}
+          to {background-color: rgb(241, 13, 63);}
+
+
+        }
          body {
            font-size: 20px;
            color: rgb(255, 255, 255);
@@ -121,8 +125,10 @@
     
   <body>
     <div class = "title"> 
-      <h1 onclick = "this.innerHTML = 'Double Click to know who I am'; this.style='color: white;';" 
-      ondblclick = "this.innerHTML = 'I am a Great Potoo Bird'; this.style='color: white;';">What Am I?</h1>
+      <h1 onclick = "this.innerHTML = 'Double Click to know who I am'; 
+      this.style='color: white;';" 
+      ondblclick = "this.innerHTML = 'I am a Great Potoo Bird'; 
+      this.style='color: white;';">What Am I?</h1>
       <marquee><h3>Who am I?</h3></marquee>
     </div>
   
@@ -139,11 +145,13 @@
   
    </div>
    <div class="picture1">
-       <img src="What.jpg" onclick = MOTH.jpg"this.style = 'border: 2px white solid;';" width="95%" style="border: 2px white solid;"> 
+       <img src="What.jpg" onclick = "this.style = 'border: 2px white solid;';" 
+       width="95%" style="border: 2px white solid;"> 
    </div>
   
    <div class="picture2">
-       <img src="" onclick = "this.src = '';" width="95%" style="border: 2px rgb(67, 112, 196) solid;"> 
+       <img src="What.jpg" onclick = "this.src = 'MOTH.jpg';" 
+       width="95% style="border: 2px rgb(67, 112, 196) solid ";"> 
    </div>
    <div class="footer">
     
