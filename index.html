@@ -51,7 +51,7 @@
            font-size: 25px;
   
            display: grid;
-           grid-template-columns: 1fr 1fr 1fr;
+           grid-template-columns: 1fr 1fr 1fr 1fr;
            grid-template-rows: 1fr 1fr 1fr 50px;
            gap: 5px;
            }
@@ -72,6 +72,7 @@
             grid-row-end: 3;
             grid-column-start: 1;
             grid-column-end: 2;
+            border: 3px ghostwhite;
             }
   
         .picture2 {
@@ -79,6 +80,7 @@
             grid-row-end: 4;
             grid-column-start: 1;
             grid-column-end: 2;
+            border: 3px ghostwhite;
             }
   
         .content {
@@ -120,7 +122,15 @@
     border: 2px dashed black;
      }
   
+     .sudo {
+            image: url(
+"");
+        }
   
+        .sudo:hover {
+            background-image: url(
+"https://media.geeksforgeeks.org/wp-content/uploads/rk.png");
+        }
      
     </style>
   </head> 
@@ -129,21 +139,31 @@
     <div class = "title"> 
       <h1 onclick = "this.innerHTML = 'Double Click to know who I am'; 
       this.style='color: white;';" 
-      ondblclick = "this.innerHTML = 'I am a Great Potoo Bird'; 
-      this.style='color: white;';">What Am I?</h1>
+      ondblclick = "this.innerHTML = '<h1>I am a Great Potoo Bird(Hover over me to see an image of me)</h1>'; 
+      this.style='color: white;';"
+      class="sudo">
+    
+      >What Am I?</h1>
       <marquee><h3>Who am I?</h3></marquee>
     </div>
   
     <div class="content">
-       <h2></h2>
-  
-      ouhpiuhyiugh
-      
        <ul>
-         <li></li>
-       </ul>
+        <img src="What.jpg" onclick = "this.innerHTML = <li><h2>I am an Avian</h2></li>;">
+    </ul>
   
    </div>
+
+
+   <div class="content2">
+      <ul>
+        <img src="What.jpg" onclick = "this.innerHTML = <li><h2>I have a HUGE mouth</h2></li>;">
+    </ul>
+
+
+   </div>
+
+
    <div class="picture1">
        <img src="What.jpg" onclick = "this.src = 'NightJar.jpg';" 
        width="95%" style="border: 2px white solid;"> 
