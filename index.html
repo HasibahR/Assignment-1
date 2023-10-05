@@ -119,7 +119,7 @@
             grid-row-start: 4;
             grid-row-end: 5;
             grid-column-start: 1;
-            grid-column-end: 4;
+            grid-column-end: 5;
             }
   
   
@@ -135,7 +135,10 @@
      p {
     border: 2px dashed black;
      }
-  
+     <div id="stopwatch">00:00:00</div>
+<button onclick="startStopwatch()">Start</button>
+<button onclick="stopStopwatch()">Stop</button>
+<button onclick="resetStopwatch()">Reset</button>
             
      
     </style>
@@ -145,7 +148,7 @@
     <div class = "title"> 
       <h1 onclick = "this.innerHTML = 'Double Click to know who I am'; 
       this.style='color: white;';" 
-      ondblclick = "this.innerHTML = 'I am a Great Potoo Bird (Hover Over Me to see an image of me)'"; this.style="color: white;">What Am I? </h1>
+      ondblclick = "this.innerHTML = 'I am a Great Potoo Bird'"; this.style="color: white;">What Am I? </h1>
       <marquee><h3>Who am I?</h3></marquee>
     </div>
   
@@ -175,7 +178,7 @@
        <img src="What.jpg" width="400" onclick = "this.src = 'MOTH.jpg';" 
        width="95%" style="border: 2px white solid;"> 
    </div>
-   <div class="footer">
+ 
 
     <div class="picture3">
       <img src="What.jpg" width="400" onclick = "this.src = 'NightJar.jpg';" 
@@ -186,7 +189,7 @@
     <img src="What.jpg" width="400" onclick = "this.src = 'NightJar.jpg';" 
     width="95%" style="border: 2px white solid;"> 
    </div>
-    
+      <div class="footer">
        <h4>We are not responsible for anyone who get's mad when they guess wrong. We are also not responsible for any rage quitters that have broken their device while trying to guess. Thank you.
     </h4>
     </div>
